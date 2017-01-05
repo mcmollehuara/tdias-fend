@@ -1,0 +1,9 @@
+<h5>
+    {{options.title}}
+</h5>
+<div>
+    <input {{options.filter}} type="text">
+</div>
+<div *ngFor="let item of data">
+    {{item.name}}
+</div>

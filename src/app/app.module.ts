@@ -7,6 +7,12 @@ import { removeNgStyles, createNewHosts, createInputTransfer } from '@angularcla
 
 import { LayoutModule } from './layout/layout.module';
 import { DashboardModule } from './dashboard/dashboard.module';
+import { OrderModule } from './order/order.module';
+import { ServiceModule } from './service/service.module';
+import { ItineraryModule } from './itinerary/itinerary.module';
+import { DestinationModule } from './destination/destination.module';
+import { CompanyModule } from './company/company.module';
+import { AgencyModule } from './agency/agency.module';
 
 /*
  * Platform and Environment providers/directives/pipes
@@ -52,6 +58,12 @@ type StoreType = {
     HttpModule,
     LayoutModule,
     DashboardModule,
+    OrderModule,
+    DestinationModule,
+    ServiceModule,
+    ItineraryModule,
+    CompanyModule,
+    AgencyModule,
     RouterModule.forRoot(ROUTES, { useHash: true })
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection

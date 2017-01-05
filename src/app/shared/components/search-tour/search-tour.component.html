@@ -1,0 +1,32 @@
+<h5>Buscar</h5>
+<div class="row">
+    <div class="col-md-6">
+        <input type="radio" value="Solo Ida">
+    </div>
+    <div class="col-md-6">
+        <input type="radio" value="Retorno">
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <select [(ngModel)]="from" name="from" id="from">
+            <option value="jaen">Jaen</option>
+            <option value="trujillo">trujillo</option>
+        </select>
+    </div>
+    <div class="col-md-12">
+        <select [(ngModel)]="to" name="to" id="to">
+            <option value="jaen">Jaen</option>
+            <option value="trujillo">trujillo</option>
+        </select>
+    </div>
+    <div class="col-md-6">
+        <input [(ngModel)]="start"  type="date">
+    </div>
+    <div class="col-md-6">
+        <input  [(ngModel)]="end"   type="date">
+    </div>
+    <div class="col-md-6">
+        <input (click)="onSearchTour" type="button" value="Buscar">
+    </div>
+</div>

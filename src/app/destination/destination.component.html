@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-md-3">
+        <list [options]="destinationOptions" [data]="listData">
+        </list>
+    </div>
+    <div class="col-md-6">
+        <slick-carousel [options]="sliderOptions" [data]="sliderData">
+        </slick-carousel>
+        <sebm-google-map [latitude]="lat" [longitude]="lng">
+            <sebm-google-map-marker [latitude]="lat" [longitude]="lng"></sebm-google-map-marker>
+        </sebm-google-map>
+    </div>
+    <div class="col-md-3">
+        <search-tour [options]="searchOptions" data="destinations"></search-tour>
+    </div>
+</div>

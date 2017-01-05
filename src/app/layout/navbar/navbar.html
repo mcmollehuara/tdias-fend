@@ -3,7 +3,7 @@
 		<ul class="nav navbar-nav">
 			<li class="nav-item">
 				<a href="#">
-					<img src="assets/img/logo/logo.png" alt="Logo" style="height:50px">
+					<img src="assets/img/logo/logo.png" alt="Logo" style="height:40px">
 				</a>
 			</li> 
 			<!--<li class="nav-item dropdown" style="padding-top: 5px;">
@@ -36,7 +36,7 @@
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle dropdown-toggle-notifications" id="notifications-dropdown-toggle" data-toggle="dropdown">
 					<span class="thumb-sm avatar pull-xs-left">
-                    <img class="img-circle" src="assets/img/people/unknown.jpg" alt="...">
+                    <img class="img-circle" src="assets/img/people/unknown.jpg" alt="..." width="30px">
                 </span> &nbsp; <strong>Miguel Condori</strong>&nbsp;
 				</a>
 			</li>
@@ -70,30 +70,30 @@
 </div>
 <div style="background-color: white;">
 	<div class="btn-group">
-		<!--<label btnradio="'Left'" class="btn btn-gray" style="background-color: white; border-color: white;">
+		<label btnradio="'Left'" class="btn btn-gray" style="background-color: white; border-color: white;">
         <i class="fa fa-user" aria-hidden="true"></i>
-        Menu
-      </label>-->
-		<!--<label btnradio="'Left'" class="btn btn-gray" style="background-color: white; border-color: white;">
+        <a [routerLink]="['/portal', 'dashboard']">Inicio</a>
+      </label>
+		<label btnradio="'Left'" class="btn btn-gray" style="background-color: white; border-color: white;">
         <i class="fa fa-calendar" aria-hidden="true"></i>
-        Shift Planner
+        <a  [routerLink]="['/portal', 'destination']">Destinos</a>
       </label>
 		<label btnradio="'Left'" class="btn btn-gray" style="background-color: white; border-color: white;">
         <i class="fa fa-magic" aria-hidden="true"></i>
-        Management
+        <a  [routerLink]="['/portal', 'itinerary']">Itinerarios</a>
       </label>
 		<label btnradio="'Left'" class="btn btn-gray" style="background-color: white; border-color: white;">
         <i class="fa fa-search" aria-hidden="true"></i>
-        Search
+        <a  [routerLink]="['/portal', 'service']">Servicios</a>
       </label>
 		<label btnradio="'Left'" class="btn btn-gray" style="background-color: white; border-color: white;">
         <i class="fa fa-cogs" aria-hidden="true"></i>
-        Administration
+        <a [routerLink]="['/portal', 'agency']">Agencias</a>
       </label>
 		<label btnradio="'Left'" class="btn btn-gray" style="background-color: white; border-color: white;">
         <i class="fa fa-line-chart" aria-hidden="true"></i>
-        Reports
-      </label>-->
+        <a  [routerLink]="['/portal', 'company']">Empresa</a>
+      </label>
 
 	</div>
 </div>
